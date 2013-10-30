@@ -15,6 +15,6 @@
     
     
 }
-- (void) showEmailComposer:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options
+- (void) showEmailComposer:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
 @end

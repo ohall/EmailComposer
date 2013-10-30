@@ -62,9 +62,8 @@
         //  [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
         
         if (picker != nil) {
-            [[ super appViewController ] presentModalViewController:picker animated:YES];
+            [[ super viewController ] presentModalViewController:picker animated:YES];
         }
-        [picker release];
     }
     
     
@@ -93,11 +92,10 @@
             break;
         }
         
-        [[ super appViewController ] dismissModalViewControllerAnimated:YES];
+        [[ super viewController ] dismissModalViewControllerAnimated:YES];
         
         NSString* jsString = [[NSString alloc] initWithFormat:@"window.plugins.emailComposer._didFinishWithResult(%d);",webviewResult];
         [self writeJavascript:jsString];
-        [jsString release];
         
     }
     
