@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="org.apache.cordova.emailComposer"
+           id="org.apache.cordova.emailComposer.EmailComposer"
       version="0.2.3">
     <name>EmailComposer</name>
     <description>EmailComposer Plugin</description>
@@ -18,7 +18,6 @@
         <config-file target="config.xml" parent="/*">
 		    <feature name="EmailComposer">
 			    <param name="ios-package" value="EmailComposer"/>
-			    <param name="onload" value="true"/>
 		    </feature>
         </config-file>
 
